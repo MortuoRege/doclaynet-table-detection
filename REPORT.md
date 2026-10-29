@@ -439,21 +439,33 @@ the app as an HTTP API.
    Spaces), so it can be tried without installing anything.
 
 ---
-
 ## 12. AI tools usage
 
-I used AI tools throughout the project, both to write code and to test ideas. Every design decision and experiment was mine. I checked everything the AI produced before relying on it.
+I used AI tools throughout the project, both to write code and to test ideas.
+Every design decision and experiment was mine. I checked everything the AI
+produced before relying on it.
 
-What I used AI for
+**What I used AI for**
 
-Streaming the data from Hugging Face: the AI generated the first version of the code that reads only the selected pages from the Parquet files. I then refactored it to make it easier to read.
-Demo app: the Gradio app (app.py) was built with AI help.
-Charts: the AI helped make the charts in the optimisation notebook clearer.
-Documentation: the AI helped format the README and this report (structure, tables, headings). The content (results, explanations and conclusions) is my own.
+- **Streaming the data from Hugging Face:** the AI generated the first version
+  of the code that reads only the selected pages from the Parquet files. I then
+  refactored it to make it easier to read.
+- **Demo app:** the Gradio app (`app.py`) was built with AI help.
+- **Charts:** the AI helped make the charts in the optimisation notebook clearer.
+- **Documentation:** the AI helped format the README and this report (structure,
+  tables, headings). The content (results, explanations and conclusions) is my
+  own.
 
-How I checked it
+**How I checked it**
 
-Data code: the notebooks check every run that no document appears in two splits, and that the selected pages match the saved selected_pages.json page by page. I also checked by hand that the validation labels contain exactly 180 tables, the number in the dataset.
-Training and results: the final model was trained twice on Kaggle and once on a rented GPU. The scores matched, so the pipeline behaves the same on different machines.
-The app: I ran it on the example pages and on pages of my own, and compared its boxes with the failure-analysis notebook.
-Documents: I checked every number in the README and the report against the result files in results/.
+- **Data code:** the notebooks check every run that no document appears in two
+  splits, and that the selected pages match the saved `selected_pages.json`
+  page by page. I also checked by hand that the validation labels contain
+  exactly 180 tables, the number in the dataset.
+- **Training and results:** the final model was trained twice on Kaggle and once
+  on a rented GPU. The scores matched, so the pipeline behaves the same on
+  different machines.
+- **The app:** I ran it on the example pages and on pages of my own, and
+  compared its boxes with the failure-analysis notebook.
+- **Documents:** I checked every number in the README and the report against the
+  result files in `results/`.
