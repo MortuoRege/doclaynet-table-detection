@@ -1,0 +1,5 @@
+names:
+  0: table
+path: /home/beka/Desktop/upgaming/table-detection/data/validation_pages
+train: images
+val: images

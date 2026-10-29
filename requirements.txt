@@ -1,0 +1,19 @@
+# For running locally: the demo app, failure analysis and optimisation notebooks.
+# The training notebooks (01-03) run on Kaggle and install what they need in their first cell.
+#
+# CPU-only PyTorch is much smaller. Install it first:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+
+ultralytics==8.3.221
+openvino==2026.4.1
+nncf==3.4.0
+onnx==1.23.2
+onnxslim==0.1.98
+onnxruntime==1.31.1
+gradio==6.31.0
+pandas
+matplotlib
+pyyaml
+pillow
+jupyter

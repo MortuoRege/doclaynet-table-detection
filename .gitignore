@@ -1,0 +1,10 @@
+# Downloaded automatically by Ultralytics when needed.
+yolo11n.pt
+
+# Python, Jupyter, Gradio and Ultralytics caches.
+__pycache__/
+.ipynb_checkpoints/
+.virtual_documents/
+.gradio/
+*.cache
+runs/
